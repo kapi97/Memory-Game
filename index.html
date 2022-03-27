@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Memory Game
+    </title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+    <header>  
+            <i class="fas fa-brain memory-game-logo"></i>
+            <p class="memory-game-name">MEMORY GAME</p>
+    </header>
+
+   
+        
+        <div class="game-controlers">
+        
+                <button class="restart-game-button" id="restart-game-button" onclick="restart_game()">RESTART GAME</button>     
+                <button class="start-game-button" id="start-game-button" onclick="start_game()">START GAME</button>
+                <select class="select-images-sets" id="select-images-sets" name="images-set">
+                        <option value="images_set_one">SET 1 - SERIES</option>
+                        <option value="images_set_two">SET 2 - CARS</option>
+                        <option value="images_set_three">SET 3 - BUILDINGS</option>                        
+                </select>
+    
+            <p class="game-timer" id="game-timer">TIME: - SEC</p>
+   
+        </div>
+        <section class="game-wrapper">
+        <div id="images-content-wrapper" class="images-content-wrapper">
+            <div class="image-wrapper">   
+               <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">   
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">    
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">   
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">  
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">    
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">    
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">    
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">    
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">   
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">   
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">   
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">    
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper"> 
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">  
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper">  
+                <p class="question-mark"></p>
+            </div>
+
+            <div class="image-wrapper"> 
+                <p class="question-mark"></p>
+            </div>
+    
+            <div class="image-wrapper">  
+                <p class="question-mark"></p>
+            </div>
+        </div>       
+        <div class="game-state-text-wrapper" id="start-game-text-wrapper">
+            You must start the game..
+            <br>..come on, let's go <i class="fas fa-smile-wink smile-face"></i>
+        </div>
+
+        <div class="game-state-text-wrapper" id="won-game-text-wrapper">
+            Wow! You won, you are really good.. 
+            <br>..try yourself one more time <i class="fas fa-smile-wink smile-face"></i>
+        </div>
+
+        <div class="game-state-text-wrapper" id="lost-game-text-wrapper">
+            Time's up! This time you lost.. 
+            <br>..don't worry you can try again <i class="fas fa-smile-wink smile-face"></i>
+        </div>
+
+    </section>
+
+    <footer>
+            Memory Game &copy;
+    </footer>
+
+
+</body>
+
+<!-- Game Mechanic Main-->
+<script src="js/main_game.js"></script>
+<!-- Font Awsome -->
+<script src="https://kit.fontawesome.com/154bd62b45.js" crossorigin="anonymous"></script>
+
+</html>

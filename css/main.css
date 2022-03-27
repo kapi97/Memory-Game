@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #577d76;
+  background: #577d76;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, rgba(35, 80, 69, 0.253)), to(white));
+  background: linear-gradient(0deg, rgba(35, 80, 69, 0.253) 35%, white);
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  background-color: #1c3e36;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.memory-game-logo {
+  font-size: 42px;
+  margin: 8px;
+  margin-left: 11%;
+  float: left;
+  -webkit-animation: 6s infinite color-change;
+          animation: 6s infinite color-change;
+}
+
+.memory-game-name {
+  line-height: 60px;
+  margin-right: 11%;
+  float: right;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    color: white;
+  }
+  66% {
+    color: #9fada9;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: white;
+  }
+  66% {
+    color: #9fada9;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.game-wrapper {
+  margin: auto;
+  width: 80%;
+  height: calc(auto - 175px);
+  min-height: calc(100vh - 175px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-controlers {
+  width: 78%;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+.start-game-button {
+  background-color: none;
+  height: 28px;
+  width: 32%;
+  float: left;
+  background-color: #1c3e36;
+  border: 3px solid #1c3e36;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.start-game-button:focus {
+  outline: 0;
+}
+
+.restart-game-button:focus {
+  outline: 0;
+}
+
+.start-game-button:hover {
+  color: #9eb4a7;
+}
+
+.restart-game-button:hover {
+  color: #9eb4a7;
+}
+
+.restart-game-button {
+  background-color: none;
+  height: 28px;
+  width: 32%;
+  float: left;
+  background-color: #1c3e36;
+  border: 3px solid #1c3e36;
+  color: white;
+  display: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.game-timer {
+  background-color: none;
+  width: 32%;
+  height: 28px;
+  float: left;
+  border: 3px solid #1c3e36;
+  color: #1c3e36;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 8px;
+  margin-left: 2%;
+  border-radius: 6px;
+}
+
+.select-images-sets {
+  background-color: white;
+  width: 32%;
+  height: 28px;
+  float: left;
+  border: 3px solid #1c3e36;
+  color: #1c3e36;
+  outline: none;
+  padding-left: 5px;
+  padding-top: 3px;
+  margin-left: 2%;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.select-images-sets:hover {
+  outline: none;
+}
+
+.select-images-sets option {
+  background-color: #1c3e36;
+  color: white;
+  outline: none;
+}
+
+#images-content-wrapper {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.game-state-text-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #1c3e36;
+}
+
+#start-game-text-wrapper {
+  display: block;
+  font-size: 25px;
+}
+
+#won-game-text-wrapper {
+  display: none;
+  font-size: 25px;
+}
+
+#lost-game-text-wrapper {
+  display: none;
+  font-size: 25px;
+}
+
+.smile-face {
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+.image-wrapper {
+  -ms-flex-preferred-size: 12.0%;
+      flex-basis: 12.0%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 22vh;
+  line-height: 22vh;
+  margin: 1%;
+  border: 3px solid #1c3e36;
+  color: white;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: black;
+          box-shadow: black;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 29px -10px black;
+          box-shadow: 0px 0px 29px -10px black;
+}
+
+p.question-mark {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+p.question-mark:before {
+  content: "?";
+  font-size: 50px;
+}
+
+.disabled {
+  border-color: transparent !important;
+  background-color: none !important;
+  background-image: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.disabled > p.question-mark {
+  color: transparent;
+}
+
+.hidden {
+  background-color: #285b50;
+  border: 3px solid #1c3e36;
+  background-image: none !important;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.selected {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.image-set-1-breaking-bad {
+  background-image: url("/images/set1/set-1-breaking-bad.png");
+}
+
+.image-set-1-friends {
+  background-image: url("/images/set1/set-1-friends.png");
+}
+
+.image-set-1-game-of-thrones {
+  background-image: url("/images/set1/set-1-game-of-thrones.png");
+}
+
+.image-set-1-how-i-met-u-mother {
+  background-image: url("/images/set1/set-1-how-i-met-u-mother.png");
+}
+
+.image-set-1-la-casa-de-papel {
+  background-image: url("/images/set1/set-1-la-casa-de-papel.png");
+}
+
+.image-set-1-lucifer {
+  background-image: url("/images/set1/set-1-lucifer.png");
+}
+
+.image-set-1-mr-robot {
+  background-image: url("/images/set1/set-1-mr-robot.png");
+}
+
+.image-set-1-suits {
+  background-image: url("/images/set1/set-1-suits.png");
+}
+
+.image-set-1-trailer-park-boys {
+  background-image: url("/images/set1/set-1-trailer-park-boys.png");
+}
+
+.image-set-2-ford-mustang {
+  background-image: url("/images/set2/set-2-ford-mustang.png");
+}
+
+.image-set-2-chevrolet-camaro {
+  background-image: url("/images/set2/set-2-chevrolet-camaro.png");
+}
+
+.image-set-2-dodge-chalenger {
+  background-image: url("/images/set2/set-2-dodge-chalenger.png");
+}
+
+.image-set-2-chevrolet-corvette-z06 {
+  background-image: url("/images/set2/set-2-chevrolet-corvette-z06.png");
+}
+
+.image-set-2-ferrari-enzo {
+  background-image: url("/images/set2/set-2-ferrari-enzo.png");
+}
+
+.image-set-2-set-ibiza {
+  background-image: url("/images/set2/set-2-set-ibiza.png");
+}
+
+.image-set-2-mazda-6 {
+  background-image: url("/images/set2/set-2-mazda-6.png");
+}
+
+.image-set-2-bmw-m2 {
+  background-image: url("/images/set2/set-2-bmw-m2.png");
+}
+
+.image-set-2-fiat-multipla {
+  background-image: url("/images/set2/set-2-fiat-multipla.png");
+}
+
+.image-set-3-colosesum {
+  background-image: url("/images/set3/set-3-colosesum.png");
+}
+
+.image-set-3-eiffel-tower {
+  background-image: url("/images/set3/set-3-eiffel-tower.png");
+}
+
+.image-set-3-flatiron {
+  background-image: url("/images/set3/set-3-flatiron.png");
+}
+
+.image-set-3-great-sphinx {
+  background-image: url("/images/set3/set-3-great-sphinx.png");
+}
+
+.image-set-3-statue-of-liberty {
+  background-image: url("/images/set3/set-3-statue-of-liberty.png");
+}
+
+.image-set-3-sydney-opera-house {
+  background-image: url("/images/set3/set-3-sydney-opera-house.png");
+}
+
+.image-set-3-taj-mahal {
+  background-image: url("/images/set3/set-3-taj-mahal.png");
+}
+
+.image-set-3-tower-of-pisa {
+  background-image: url("/images/set3/set-3-tower-of-pisa.png");
+}
+
+.image-set-3-white-house {
+  background-image: url("/images/set3/set-3-white-house.png");
+}
+
+@media (orientation: portrait) {
+  .image-wrapper {
+    -ms-flex-preferred-size: 29%;
+        flex-basis: 29%;
+    height: 9.2vh;
+    line-height: 9.2vh;
+    background-size: 100%;
+  }
+  .game-timer {
+    font-size: 9px;
+    padding-top: 9px;
+    height: 35px;
+  }
+  .select-images-sets {
+    font-size: 9px;
+    height: 35px;
+  }
+  .start-game-button {
+    font-size: 9px;
+    padding-top: 3px;
+    height: 35px;
+  }
+  .restart-game-button {
+    font-size: 9px;
+    padding-top: 3px;
+    height: 35px;
+  }
+}
+
+footer {
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background-color: #1c3e36;
+  text-align: center;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

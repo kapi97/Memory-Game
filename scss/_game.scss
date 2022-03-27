@@ -1,0 +1,328 @@
+.game-wrapper{
+    margin: auto;
+    width:80%;
+    height: calc(auto - 175px);
+    min-height: calc(100vh - 175px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-controlers{
+    width:78%;
+    height:35px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:11%;
+    margin-right:11%;
+}
+
+.start-game-button{
+    background-color: none;
+    height:28px;
+    width: 32%;
+    float:left;
+    background-color: $color-bulit-green;
+    border: 3px solid $color-bulit-green;
+    color: $color-white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+
+.start-game-button:focus {outline:0;}
+.restart-game-button:focus {outline:0;}
+
+.start-game-button:hover {color: rgb(158, 180, 167);}
+.restart-game-button:hover {color: rgb(158, 180, 167);}
+
+.restart-game-button{
+    background-color: none;
+    height:28px;
+    width: 32%;
+    float:left;
+    background-color: $color-bulit-green;
+    border: 3px solid $color-bulit-green;
+    color: $color-white;
+    display: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.game-timer{
+    background-color: none;
+    width: 32%;
+    height:28px;
+    float:left;
+    border: 3px solid $color-bulit-green;
+    color: $color-bulit-green;
+    box-sizing: border-box;
+    padding-left:8px;
+    margin-left:2%;
+    border-radius: 6px;
+
+}
+
+.select-images-sets{
+    background-color: white;
+    width: 32%;
+    height:28px;
+    float:left;
+    border: 3px solid $color-bulit-green;
+    color: $color-bulit-green;
+    outline:none;
+    padding-left:5px;
+    padding-top:3px;
+    margin-left:2%;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.select-images-sets:hover{
+    outline:none;
+}
+
+.select-images-sets option{
+    background-color: $color-bulit-green;
+    color: $color-white;
+    outline: none;
+}
+
+#images-content-wrapper{
+    flex-basis: 100%;
+    height:100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.game-state-text-wrapper{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $color-bulit-green;
+}
+
+#start-game-text-wrapper{
+    display: block;
+    font-size:25px;
+}
+
+#won-game-text-wrapper{
+    display: none;
+    font-size:25px;
+}
+
+#lost-game-text-wrapper{
+    display: none;
+    font-size:25px;
+}
+
+.smile-face{
+    margin-top:5px;
+    font-size:25px;
+}
+
+.image-wrapper{
+    flex-basis: 12.0%;
+    flex-grow: 1;
+    height: 22vh;
+    line-height: 22vh;
+    margin:1%;
+    border: 3px solid $color-bulit-green;
+    color: $color-white;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 29px -10px rgba(0,0,0,1);
+}
+
+p.question-mark{
+    transform: rotateY(-180deg);
+}
+
+p.question-mark:before{
+    content: ("?");
+    font-size:50px;
+}
+
+.disabled{
+    border-color: transparent !important;
+    background-color: none !important;
+    background-image: none !important;
+    box-shadow: none;
+}
+
+.disabled > p.question-mark{
+    color: transparent;
+}
+
+.hidden{
+    background-color: $color-bulit-green-soft;
+    border: 3px solid $color-bulit-green;
+    background-image: none !important;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateY(-180deg);
+}
+
+.selected{
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+}
+
+//set1
+
+.image-set-1-breaking-bad{
+    background-image: url("/images/set1/set-1-breaking-bad.png");
+}
+
+.image-set-1-friends{
+    background-image: url("/images/set1/set-1-friends.png");
+}
+
+.image-set-1-game-of-thrones{
+    background-image: url("/images/set1/set-1-game-of-thrones.png");
+}
+
+.image-set-1-how-i-met-u-mother{
+    background-image: url("/images/set1/set-1-how-i-met-u-mother.png");
+}
+
+.image-set-1-la-casa-de-papel{
+    background-image: url("/images/set1/set-1-la-casa-de-papel.png");
+}
+
+.image-set-1-lucifer{
+    background-image: url("/images/set1/set-1-lucifer.png");
+}
+
+.image-set-1-mr-robot{
+    background-image: url("/images/set1/set-1-mr-robot.png");
+}
+
+.image-set-1-suits{
+    background-image: url("/images/set1/set-1-suits.png");
+}
+
+.image-set-1-trailer-park-boys{
+    background-image: url("/images/set1/set-1-trailer-park-boys.png");
+}
+
+//set2
+
+.image-set-2-ford-mustang{
+    background-image: url("/images/set2/set-2-ford-mustang.png");
+}
+
+.image-set-2-chevrolet-camaro{
+    background-image: url("/images/set2/set-2-chevrolet-camaro.png");
+}
+
+.image-set-2-dodge-chalenger{
+    background-image: url("/images/set2/set-2-dodge-chalenger.png");
+}
+
+.image-set-2-chevrolet-corvette-z06{
+    background-image: url("/images/set2/set-2-chevrolet-corvette-z06.png");
+}
+
+.image-set-2-ferrari-enzo{
+    background-image: url("/images/set2/set-2-ferrari-enzo.png");
+}
+
+.image-set-2-set-ibiza{
+    background-image: url("/images/set2/set-2-set-ibiza.png");
+}
+
+.image-set-2-mazda-6{
+    background-image: url("/images/set2/set-2-mazda-6.png");
+}
+
+.image-set-2-bmw-m2{
+    background-image: url("/images/set2/set-2-bmw-m2.png");
+}
+
+.image-set-2-fiat-multipla{
+    background-image: url("/images/set2/set-2-fiat-multipla.png");
+}
+
+
+
+//set3
+
+.image-set-3-colosesum{
+    background-image: url("/images/set3/set-3-colosesum.png");
+}
+
+.image-set-3-eiffel-tower{
+    background-image: url("/images/set3/set-3-eiffel-tower.png");
+}
+
+.image-set-3-flatiron{
+    background-image: url("/images/set3/set-3-flatiron.png");
+}
+
+.image-set-3-great-sphinx{
+    background-image: url("/images/set3/set-3-great-sphinx.png");
+}
+
+.image-set-3-statue-of-liberty{
+    background-image: url("/images/set3/set-3-statue-of-liberty.png");
+}
+
+.image-set-3-sydney-opera-house{
+    background-image: url("/images/set3/set-3-sydney-opera-house.png");
+}
+
+.image-set-3-taj-mahal{
+    background-image: url("/images/set3/set-3-taj-mahal.png");
+}
+
+.image-set-3-tower-of-pisa{
+    background-image: url("/images/set3/set-3-tower-of-pisa.png");
+}
+
+.image-set-3-white-house{
+    background-image: url("/images/set3/set-3-white-house.png");
+}
+
+
+@media(orientation: portrait){
+    .image-wrapper{
+        flex-basis: 29%;
+        height: 9.2vh;
+        line-height: 9.2vh;
+        background-size: 100% ;
+    } 
+
+    .game-timer{
+        font-size: 9px;
+        padding-top:9px;
+        height:35px;
+    }
+
+    .select-images-sets{
+        font-size: 9px;
+        height:35px;
+    }
+
+    .start-game-button{
+        font-size: 9px;
+        padding-top:3px;
+        height:35px;
+    }
+
+    .restart-game-button{
+        font-size: 9px;
+        padding-top:3px;
+        height:35px;
+    }
+
+
+}

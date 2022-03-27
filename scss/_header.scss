@@ -1,0 +1,30 @@
+
+
+header{
+    height: 60px;
+    width: 100%;
+    background-color: $color-bulit-green;
+    text-align: center;
+    color: $color_white;
+    margin-bottom: 10px;
+}
+
+.memory-game-logo{
+    font-size: 42px;
+    margin:8px;
+    margin-left:11%;
+    float:left;
+    animation: 6s infinite color-change;
+}
+
+.memory-game-name{
+    line-height: 60px;
+    margin-right:11%;
+    float:right;
+}
+
+@keyframes color-change {
+    0%   {color: $color_white;}
+    66%  {color: rgb(159, 173, 169);}
+    100%  {color: $color_white;}
+}

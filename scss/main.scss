@@ -1,0 +1,16 @@
+@import '_variables.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(87,125,118);
+    background: rgb(87,125,118);
+    background: linear-gradient(0deg, rgba(35, 80, 69, 0.253) 35%, rgba(255,255,255,1));
+}
+
+
+@import '_header.scss', '_game.scss', '_footer.scss';
